@@ -2,6 +2,10 @@
   "name": "js-auth",
   "version": "0.0.0",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/js-auth/js-auth",
+    "type": "git"
+  },
   "type": "module",
   "scripts": {},
   "private": true,

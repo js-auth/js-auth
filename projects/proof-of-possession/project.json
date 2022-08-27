@@ -16,7 +16,11 @@
     "publish": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "command": "ts-node tools/scripts/publish.ts proof-of-possession {args.ver} {args.tag}"
+        "commands": [
+          {
+            "command": "node tools/scripts/publish.js proof-of-possession {args.ver} {args.tag}"
+          }
+        ]
       },
       "dependsOn": [
         {
