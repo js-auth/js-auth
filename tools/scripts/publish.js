@@ -9,10 +9,11 @@
 
 import { readCachedProjectGraph } from '@nrwl/devkit';
 import { execSync } from 'child_process';
-import { readFileSync, writeFileSync } from 'fs';
+import { copyFileSync, readFileSync, writeFileSync } from 'fs';
 import chalk from 'chalk';
+import path from 'path';
 
-function invariant(condition: any, message: string) {
+function invariant(condition, message) {
   if (!condition) {
     console.error(chalk.bold.red(message));
     process.exit(1);
@@ -43,6 +44,8 @@ invariant(
   outputPath,
   `Could not find "build.options.outputPath" of project "${name}". Is project.json configured  correctly?`
 );
+
+copyFileSync('./README.md', path.join(outputPath, 'README.md'));
 
 process.chdir(outputPath);
 
