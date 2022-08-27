@@ -12,7 +12,7 @@ import { execSync } from 'child_process';
 import { readFileSync, writeFileSync } from 'fs';
 import chalk from 'chalk';
 
-function invariant(condition, message) {
+function invariant(condition: any, message: string) {
   if (!condition) {
     console.error(chalk.bold.red(message));
     process.exit(1);
