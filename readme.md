@@ -8,8 +8,8 @@ ecosystem.
 
 ## Roadmap
 
-1. Support for Proof-of-Possession (DPoP) 
-    - draft: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-dpop
+1. Support for Proof-of-Possession (DPoP)
+   - draft: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-dpop
 
 ## Development setup
 
