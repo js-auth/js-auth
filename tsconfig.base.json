@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@js-auth/proof-of-possession": [
+        "packages/proof-of-possession/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
