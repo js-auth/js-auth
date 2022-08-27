@@ -1,3 +1,3 @@
 export function proofOfPossession(): string {
-  return 'proof-of-possession';
+  return 'proof-of-possession-minor-change';
 }
