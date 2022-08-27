@@ -16,7 +16,11 @@
     "publish": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
+<<<<<<< HEAD
         "command": "ts-node tools/scripts/publish.ts proof-of-possession {args.ver} {args.tag}"
+=======
+        "command": "node tools/scripts/publish.js proof-of-possession {args.ver} {args.tag}"
+>>>>>>> 8e51314 (make publish work with module tooling)
       },
       "dependsOn": [
         {

@@ -1,3 +1,3 @@
-import nxPreset from '@nrwl/jest/preset/index.js';
+import nxPreset from '@nrwl/jest/preset/jest-preset.js';
 
 export default { ...nxPreset };
