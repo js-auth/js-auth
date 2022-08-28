@@ -18,7 +18,7 @@
       "options": {
         "commands": [
           {
-            "command": "node tools/scripts/publish.js proof-of-possession {args.ver} {args.tag}"
+            "command": "ts-node --project tools/tsconfig.tools.json --esm tools/scripts/publish.ts proof-of-possession {args.ver} {args.tag}"
           }
         ]
       },
